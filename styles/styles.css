@@ -1,101 +1,83 @@
-/* -----------------Обнулення--------------------- */
-
-* {
+ul,
+ol {
     padding: 0;
     margin: 0;
-    border: 0;
 }
 
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-:focus,
-:active {
-    outline: none;
-}
-
-a:focus,
-a:active {
-    outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-    display: block;
-}
-
-input,
-button,
-textarea {
-    font-family: inherit;
-}
-
-input::-ms-clear {
-    display: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     padding: 0;
-    border: 0;
+    margin: 0;
 }
-
-
-/* ---------------------------------------------- */
 
 html {
     background-color: #e5e5e5;
-    height: 1435px;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
 }
 
 .wrapper {
-    max-width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
     margin: 0 auto;
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    transform: translate(0px, 40px);
+    padding: 40px 0px;
 }
 
 .main {
-    margin-left: 370px;
+    width: 830px;
+    background-color: #fff;
 }
 
-.about {
+.sidebar {
+    width: 370px;
+    background-color: #1e2939;
+}
+
+.sidebar img {
+    width: 370px;
+    margin-top: 40px;
+}
+
+
+/* --------------------------------main------------------------------------- */
+
+.main__box {
     padding: 102px 0px 0px 88px;
 }
 
-.about h2 {
-    font-family: "Montserrat";
-    font-style: normal;
+.main__box li {
+    width: 509px;
+}
+
+.main__box ul,
+.main__box ol {
+    list-style-position: inside;
+}
+
+.about {
     font-weight: 700;
+    font-style: normal;
+}
+
+.about__sub-title {
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
 }
 
-.about h1 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
+.about__title {
     font-size: 45px;
     line-height: 55px;
-    color: #000000;
+    padding: 19px 0px 24px 0px;
 }
 
-.about p {
-    font-family: "Montserrat";
-    font-style: normal;
+.about__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -103,161 +85,115 @@ html {
     width: 400px;
 }
 
-.projects {
-    padding: 40px 0px 0px 88px;
+.projects {}
+
+.projects__title {
+    padding-bottom: 8px;
 }
 
-.projects ol {
-    text-decoration: none;
-    padding-left: 15px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-}
-
-.projects h3 {
-    margin: 0px 0px 8px 0px;
-}
-
-.projects a,
-a:visited,
-a:hover {
-    outline: none;
-    text-decoration: none;
-    text-decoration: none;
-}
-
-.projects h3 {
+.title_1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: #000000;
+    padding-top: 40px;
 }
 
-.work {
-    padding: 51px 0px 0px 88px;
+.projects__list {}
+
+.projects__link a {
+    text-decoration: none;
+    list-style: none;
 }
 
-.work ul {
-    padding: 0px 0px 0px 15px;
-}
+.work {}
 
-.work h3 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-}
+.work__title {}
 
-.work h4 {
+.Work__1 {}
+
+.title {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    color: #000000;
     padding: 16px 0px 11px 0px;
 }
 
-.work p {
+.text {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #a8a8a8;
-    padding-bottom: 8px;
+    padding: 11px 0px 8px 0px;
 }
 
-.work ul {
+.work__list {}
+
+.work__link {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #595959;
-    width: 509px;
 }
 
-.pink {
-    color: #fb6d3a;
+.work__link::marker {
+    font-weight: bold;
 }
+
+.Work__2 {}
+
+.Work__3 {}
 
 .Education {
-    padding-left: 88px;
+    padding-bottom: 100px;
 }
 
-.Education h3 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    padding-top: 43px;
-}
+.Education__title {}
 
-.Education h4 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fb6d3a;
-    padding-top: 12px;
-}
+.Education__institute {}
 
-.Education h5 {
+.Education__cafedra {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    padding: 11px 0px;
 }
 
-.Education p {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #a8a8a8;
-    padding-bottom: 107px;
+.Education__year {}
+
+
+/* --------------------------------------------sidebar----------------------------------------------- */
+
+.sidebar__box {
+    padding: 0px 0px 0px 40px;
 }
 
-.sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 370px;
-    height: 100%;
-    background-color: #1e2939;
+.sidebar ul {
+    list-style-position: inside;
 }
 
-.sidebar img {
-    padding: 40px 0px 51px 0px;
-}
+.Contact {}
 
-.Contact {
-    padding: 51px 0px 0px 40px;
-}
-
-.Contact h3 {
+.Contact__title {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     color: #ffffff;
-    padding-bottom: 8px;
+    padding: 50px 0px 8px 0px;
 }
 
-.Contact__info p {
+.Contact__info {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
@@ -267,83 +203,33 @@ a:hover {
 }
 
 .Contact__info a {
-    font-family: "Montserrat";
-    font-style: normal;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
     opacity: 0.5;
-    outline: none;
-    text-decoration: none;
 }
 
-.Tech_Skills {
-    padding: 47px 0px 0px 40px;
-}
+.Tech_Skills {}
 
-.Tech_Skills h3 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    /* identical to box height */
-    color: #ffffff;
-    padding-bottom: 8px;
-}
+.Contact__list {}
 
-.Tech_Skills a {
-    outline: none;
-    text-decoration: none;
-}
-
-.Tech_Skills ul {
+.Contact__link {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
-    padding-left: 15px;
 }
 
-.Tech_Skills li {
-    color: #fb6d3a;
-}
-
-.Tech_Skills li span {
+.Contact__link span {
     color: #fff;
 }
 
-.Soft_Skills {
-    padding: 44px 0px 0px 40px;
-}
+.Soft_Skills {}
 
-.Soft_Skills h3 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #ffffff;
-    padding-bottom: 8px;
-}
-
-.Soft_Skills ul {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
-    list-style-position: inside;
-}
-
-.Soft_Skills li {
+.pink {
     color: #fb6d3a;
-}
-
-.Soft_Skills li span {
-    color: #fff;
 }
