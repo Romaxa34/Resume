@@ -235,7 +235,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 370px;
-    height: 1353px;
+    height: 100%;
     background-color: #1e2939;
 }
 
@@ -308,6 +308,14 @@ a:hover {
     padding-left: 15px;
 }
 
+.Tech_Skills li {
+    color: #fb6d3a;
+}
+
+.Tech_Skills li span {
+    color: #fff;
+}
+
 .Soft_Skills {
     padding: 44px 0px 0px 40px;
 }
@@ -330,4 +338,12 @@ a:hover {
     line-height: 24px;
     color: #ffffff;
     list-style-position: inside;
+}
+
+.Soft_Skills li {
+    color: #fb6d3a;
+}
+
+.Soft_Skills li span {
+    color: #fff;
 }
