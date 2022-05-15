@@ -105,6 +105,7 @@ html {
 .projects__link a {
     text-decoration: none;
     list-style: none;
+    color: #595959;
 }
 
 .work {}
