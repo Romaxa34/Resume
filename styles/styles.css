@@ -33,6 +33,7 @@ html {
 .main {
     width: 830px;
     background-color: #fff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
@@ -108,6 +109,11 @@ html {
     color: #595959;
 }
 
+.bold {
+    font-weight: bold;
+    color: #000;
+}
+
 .work {}
 
 .work__title {}
@@ -145,8 +151,13 @@ html {
     color: #595959;
 }
 
+.work__link a {
+    margin-left: 10px;
+}
+
 .work__link::marker {
     font-weight: bold;
+    color: #000;
 }
 
 .Work__2 {}
