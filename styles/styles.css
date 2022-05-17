@@ -32,13 +32,20 @@ html {
 
 .main {
     width: 830px;
-    background-color: #fff;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient( -45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 255, 1) 50%, rgba(241, 244, 255, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient( -45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 255, 1) 50%, rgba(241, 244, 255, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient( 135deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 255, 1) 50%, rgba(241, 244, 255, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
 }
 
 .sidebar {
     width: 370px;
-    background-color: #1e2939;
+    background: rgb(35, 171, 255);
+    background: -moz-linear-gradient( -45deg, rgba(35, 171, 255, 1) 0%, rgba(0, 16, 26, 1) 46%, rgba(0, 1, 2, 1) 50%, rgba(0, 12, 20, 1) 53%, rgba(0, 94, 152, 1) 76%, rgba(0, 67, 108, 1) 87%, rgba(0, 32, 52, 1) 100%);
+    background: -webkit-linear-gradient( -45deg, rgba(35, 171, 255, 1) 0%, rgba(0, 16, 26, 1) 46%, rgba(0, 1, 2, 1) 50%, rgba(0, 12, 20, 1) 53%, rgba(0, 94, 152, 1) 76%, rgba(0, 67, 108, 1) 87%, rgba(0, 32, 52, 1) 100%);
+    background: linear-gradient( 135deg, rgba(35, 171, 255, 1) 0%, rgba(0, 16, 26, 1) 46%, rgba(0, 1, 2, 1) 50%, rgba(0, 12, 20, 1) 53%, rgba(0, 94, 152, 1) 76%, rgba(0, 67, 108, 1) 87%, rgba(0, 32, 52, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#23abff', endColorstr='#002034', GradientType=1);
 }
 
 .sidebar img {
@@ -138,6 +145,11 @@ html {
     line-height: 15px;
     color: #a8a8a8;
     padding: 11px 0px 8px 0px;
+}
+
+.text p:first-child::nth-line(-n + 2) {
+    font-variant-caps: small-caps;
+    color: red;
 }
 
 .work__list {}
@@ -243,5 +255,5 @@ html {
 .Soft_Skills {}
 
 .pink {
-    color: #fb6d3a;
+    color: #0a48f1;
 }
