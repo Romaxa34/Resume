@@ -27,24 +27,79 @@ html {
     flex-direction: row-reverse;
     width: 1200px;
     margin: 0 auto;
-    padding: 40px 15px;
+    position: relative;
 }
 
 .main {
-    width: 830px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 1200px;
+    padding-left: 370px;
     background: rgb(255, 255, 255);
-    background: -moz-linear-gradient( -45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 255, 1) 50%, rgba(241, 244, 255, 1) 51%, rgba(255, 255, 255, 1) 100%);
-    background: -webkit-linear-gradient( -45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 255, 1) 50%, rgba(241, 244, 255, 1) 51%, rgba(255, 255, 255, 1) 100%);
-    background: linear-gradient( 135deg, rgba(255, 255, 255, 1) 0%, rgba(245, 247, 255, 1) 50%, rgba(241, 244, 255, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    background: -moz-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(245, 247, 255, 1) 50%,
+        rgba(241, 244, 255, 1) 51%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(245, 247, 255, 1) 50%,
+        rgba(241, 244, 255, 1) 51%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(245, 247, 255, 1) 50%,
+        rgba(241, 244, 255, 1) 51%,
+        rgba(255, 255, 255, 1) 100%
+    );
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
 }
 
 .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
     width: 370px;
+    height: 1200px;
     background: rgb(35, 171, 255);
-    background: -moz-linear-gradient( -45deg, rgba(35, 171, 255, 1) 0%, rgba(0, 16, 26, 1) 46%, rgba(0, 1, 2, 1) 50%, rgba(0, 12, 20, 1) 53%, rgba(0, 94, 152, 1) 76%, rgba(0, 67, 108, 1) 87%, rgba(0, 32, 52, 1) 100%);
-    background: -webkit-linear-gradient( -45deg, rgba(35, 171, 255, 1) 0%, rgba(0, 16, 26, 1) 46%, rgba(0, 1, 2, 1) 50%, rgba(0, 12, 20, 1) 53%, rgba(0, 94, 152, 1) 76%, rgba(0, 67, 108, 1) 87%, rgba(0, 32, 52, 1) 100%);
-    background: linear-gradient( 135deg, rgba(35, 171, 255, 1) 0%, rgba(0, 16, 26, 1) 46%, rgba(0, 1, 2, 1) 50%, rgba(0, 12, 20, 1) 53%, rgba(0, 94, 152, 1) 76%, rgba(0, 67, 108, 1) 87%, rgba(0, 32, 52, 1) 100%);
+    background: -moz-linear-gradient(
+        -45deg,
+        rgba(35, 171, 255, 1) 0%,
+        rgba(0, 16, 26, 1) 46%,
+        rgba(0, 1, 2, 1) 50%,
+        rgba(0, 12, 20, 1) 53%,
+        rgba(0, 94, 152, 1) 76%,
+        rgba(0, 67, 108, 1) 87%,
+        rgba(0, 32, 52, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        -45deg,
+        rgba(35, 171, 255, 1) 0%,
+        rgba(0, 16, 26, 1) 46%,
+        rgba(0, 1, 2, 1) 50%,
+        rgba(0, 12, 20, 1) 53%,
+        rgba(0, 94, 152, 1) 76%,
+        rgba(0, 67, 108, 1) 87%,
+        rgba(0, 32, 52, 1) 100%
+    );
+    background: linear-gradient(
+        135deg,
+        rgba(35, 171, 255, 1) 0%,
+        rgba(0, 16, 26, 1) 46%,
+        rgba(0, 1, 2, 1) 50%,
+        rgba(0, 12, 20, 1) 53%,
+        rgba(0, 94, 152, 1) 76%,
+        rgba(0, 67, 108, 1) 87%,
+        rgba(0, 32, 52, 1) 100%
+    );
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#23abff', endColorstr='#002034', GradientType=1);
 }
 
@@ -52,7 +107,6 @@ html {
     width: 370px;
     margin-top: 40px;
 }
-
 
 /* --------------------------------main------------------------------------- */
 
@@ -93,13 +147,14 @@ html {
     width: 400px;
 }
 
-.projects {}
+.projects {
+}
 
 .projects__title {
     padding-bottom: 8px;
 }
 
-.title_1 {
+._1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
@@ -108,7 +163,8 @@ html {
     padding-top: 40px;
 }
 
-.projects__list {}
+.projects__list {
+}
 
 .projects__link a {
     text-decoration: none;
@@ -121,11 +177,14 @@ html {
     color: #000;
 }
 
-.work {}
+.work {
+}
 
-.work__title {}
+.work__title {
+}
 
-.Work__1 {}
+.Work__1 {
+}
 
 .title {
     font-family: "Montserrat";
@@ -135,6 +194,10 @@ html {
     line-height: 20px;
     color: #000000;
     padding: 16px 0px 11px 0px;
+}
+.title a {
+    text-decoration: none;
+    color: #0a48f1;
 }
 
 .text {
@@ -152,7 +215,8 @@ html {
     color: red;
 }
 
-.work__list {}
+.work__list {
+}
 
 .work__link {
     font-family: "Montserrat";
@@ -172,17 +236,11 @@ html {
     color: #000;
 }
 
-.Work__2 {}
-
-.Work__3 {}
-
-.Education {
-    padding-bottom: 100px;
+.Education__title {
 }
 
-.Education__title {}
-
-.Education__institute {}
+.Education__institute {
+}
 
 .Education__cafedra {
     font-family: "Montserrat";
@@ -192,8 +250,8 @@ html {
     line-height: 17px;
 }
 
-.Education__year {}
-
+.Education__year {
+}
 
 /* --------------------------------------------sidebar----------------------------------------------- */
 
@@ -205,7 +263,8 @@ html {
     list-style-position: inside;
 }
 
-.Contact {}
+.Contact {
+}
 
 .Contact__title {
     font-family: "Montserrat";
@@ -235,9 +294,11 @@ html {
     opacity: 0.5;
 }
 
-.Tech_Skills {}
+.Tech_Skills {
+}
 
-.Contact__list {}
+.Contact__list {
+}
 
 .Contact__link {
     font-family: "Montserrat";
@@ -252,7 +313,8 @@ html {
     color: #fff;
 }
 
-.Soft_Skills {}
+.Soft_Skills {
+}
 
 .pink {
     color: #0a48f1;
